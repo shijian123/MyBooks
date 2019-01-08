@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTKHK--GBK1-0.ttf">
+            <string>FZLTKHK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HBookInfoVC">
+            <connections>
+                <outlet property="bookAuthor" destination="ikn-Vv-h3O" id="sIE-Qp-x4Q"/>
+                <outlet property="bookDownBtn" destination="tHE-sj-joG" id="TEP-9T-1jo"/>
+                <outlet property="bookIV" destination="OZ4-hl-Ncv" id="hod-e0-GF8"/>
+                <outlet property="bookInfoBotLine" destination="OOv-Ei-GCS" id="SlB-dQ-auk"/>
+                <outlet property="bookInfoMainScr" destination="BrN-6Y-RYb" id="qhA-tq-b4w"/>
+                <outlet property="bookInfoRecCentTV" destination="YKV-F9-FsQ" id="rxp-aQ-xmr"/>
+                <outlet property="bookInfoTopLine" destination="CM7-kd-MUh" id="hz4-6x-njd"/>
+                <outlet property="bookOutIV" destination="dNR-kD-4zB" id="e88-Z6-nNf"/>
+                <outlet property="bookProgressV" destination="DwX-Tb-VM1" id="gKP-P0-UsO"/>
+                <outlet property="bookReadBtn" destination="YBt-fd-a65" id="7ZH-3e-hya"/>
+                <outlet property="bookTitle" destination="ZMO-NT-rKd" id="cQy-Qr-c5c"/>
+                <outlet property="mainBtoTitleImage" destination="Tdk-cp-0yT" id="h9i-re-ioz"/>
+                <outlet property="navMainImage" destination="e3a-IV-UEe" id="xE5-zz-FE9"/>
+                <outlet property="navMainLeftBtn" destination="pZF-Ge-HwD" id="SKW-rf-Drp"/>
+                <outlet property="navMainRightBtn" destination="TLN-JN-Lae" id="tRO-5d-e3C"/>
+                <outlet property="navMainTopTitle" destination="pfH-8X-lVb" id="s1A-ZE-qiR"/>
+                <outlet property="view" destination="Cz5-XG-DOx" id="XBM-AJ-tdN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Cz5-XG-DOx">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_background_img_ipad.png" id="e3a-IV-UEe">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="3l5-q7-br0">
+                    <rect key="frame" x="0.0" y="20" width="768" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="书籍详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pfH-8X-lVb">
+                            <rect key="frame" x="0.0" y="15" width="768" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="TLN-JN-Lae">
+                            <rect key="frame" x="705" y="12" width="45" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="16"/>
+                            <state key="normal" title="书架">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoBookShelfAction:" destination="-1" eventType="touchUpInside" id="c33-as-ocn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="pZF-Ge-HwD">
+                            <rect key="frame" x="14" y="25" width="45" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="base_back_btn_ipad.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoBAckAction:" destination="-1" eventType="touchUpInside" id="tGF-6n-EaF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" id="DwX-Tb-VM1">
+                    <rect key="frame" x="0.0" y="80" width="768" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="progressTintColor" red="0.20000000000000001" green="0.76078431369999999" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="trackTintColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="BrN-6Y-RYb">
+                    <rect key="frame" x="0.0" y="80" width="768" height="924"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="gsG-9U-GwR">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="ns1-0c-KRo">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="260"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookInfo_bookOut1_img_ipad.png" id="OZ4-hl-Ncv">
+                                            <rect key="frame" x="40" y="30" width="157" height="209"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_bookOut3_img_ipad.png" id="dNR-kD-4zB">
+                                            <rect key="frame" x="35" y="25" width="167" height="221"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百年孤独见的发生几个的萨芬打法就是个的发髻上课" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZMO-NT-rKd">
+                                            <rect key="frame" x="237" y="45" width="497" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <color key="textColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：孤独" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ikn-Vv-h3O">
+                                            <rect key="frame" x="237" y="88" width="464" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YBt-fd-a65">
+                                            <rect key="frame" x="237" y="168" width="155" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="bookInfo_read_btn_ipad.png">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="startReadBookAction:" destination="-1" eventType="touchUpInside" id="xYj-MI-KXn"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tHE-sj-joG">
+                                            <rect key="frame" x="237" y="168" width="155" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="bookInfo_download_btn_ipad.png">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="downloadBookAction:" destination="-1" eventType="touchUpInside" id="OsW-IM-MB4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <view contentMode="scaleToFill" id="fCT-qM-4X9">
+                                    <rect key="frame" x="0.0" y="260" width="768" height="664"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookInfo_jianjie_img_ipad.png" id="Tdk-cp-0yT">
+                                            <rect key="frame" x="45" y="10" width="37" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="CM7-kd-MUh">
+                                            <rect key="frame" x="30" y="40" width="708" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" editable="NO" usesAttributedText="YES" selectable="NO" id="YKV-F9-FsQ">
+                                            <rect key="frame" x="50" y="80" width="668" height="301"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="按付款即可阿迪副书记法第三节和发动机阿迪康师傅见客户的萨芬海口市大黄蜂 发倒萨科技和的萨芬哈迪斯飞回家看电视啊放假打发时间看FDA 沪电股份撒 ">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="18"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="OOv-Ei-GCS">
+                                            <rect key="frame" x="30" y="400" width="708" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="base_back_btn_ipad.png" width="90" height="40"/>
+        <image name="bookInfo_bookOut1_img_ipad.png" width="316" height="412"/>
+        <image name="bookInfo_download_btn_ipad.png" width="310" height="86"/>
+        <image name="bookInfo_jianjie_img_ipad.png" width="74" height="38"/>
+        <image name="bookInfo_read_btn_ipad.png" width="310" height="86"/>
+        <image name="nav_background_img_ipad.png" width="1536" height="128"/>
+        <image name="select_bookOut3_img_ipad.png" width="258" height="340"/>
+    </resources>
+</document>

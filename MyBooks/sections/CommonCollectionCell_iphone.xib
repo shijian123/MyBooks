@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTKHK--GBK1-0.ttf">
+            <string>FZLTKHK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommonCollectionCell" id="WyY-oF-eKb" customClass="CommonCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dB2-Tl-n6E">
+                        <rect key="frame" x="1" y="3" width="90" height="126"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookShelf_books_img" translatesAutoresizingMaskIntoConstraints="NO" id="wQ6-ZD-AOe">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-fa-9zg">
+                                <rect key="frame" x="7" y="9" width="40" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvi-jq-Wbc">
+                                <rect key="frame" x="43" y="9" width="40" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-Yc-af4">
+                                <rect key="frame" x="7" y="62" width="40" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M47-S4-QGk">
+                                <rect key="frame" x="43" y="62" width="40" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookShelf_books_img" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-LV-f5o">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="130"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookShelf_uncheck_btn" translatesAutoresizingMaskIntoConstraints="NO" id="UwN-41-jVe">
+                        <rect key="frame" x="7" y="8" width="79" height="114"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookShelf_selected_btn" translatesAutoresizingMaskIntoConstraints="NO" id="TfS-ce-Nxg">
+                        <rect key="frame" x="7" y="8" width="79" height="114"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="LF8-st-umi">
+                        <rect key="frame" x="5" y="130" width="85" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-0T-ySd">
+                        <rect key="frame" x="5" y="152" width="85" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <size key="customSize" width="98" height="116"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="nWU-0T-ySd" id="Nga-Zr-zdE"/>
+                <outlet property="bookImageView" destination="wQ6-ZD-AOe" id="klI-Ns-ZWD"/>
+                <outlet property="bookKuangImg" destination="pVp-LV-f5o" id="dIs-sd-hkl"/>
+                <outlet property="bookName" destination="LF8-st-umi" id="4uP-Nz-wh9"/>
+                <outlet property="bookSelectedImage" destination="TfS-ce-Nxg" id="3Zg-Rv-FRV"/>
+                <outlet property="editModelImage" destination="UwN-41-jVe" id="chw-Tt-flv"/>
+                <outlet property="folderImage1" destination="e7F-fa-9zg" id="c6a-KE-xHK"/>
+                <outlet property="folderImage2" destination="nvi-jq-Wbc" id="qn4-ce-T3I"/>
+                <outlet property="folderImage3" destination="0E1-Yc-af4" id="cTo-t2-cPu"/>
+                <outlet property="folderImage4" destination="M47-S4-QGk" id="KIj-KD-kxF"/>
+            </connections>
+            <point key="canvasLocation" x="246.5" y="308"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bookShelf_books_img" width="86" height="120"/>
+        <image name="bookShelf_selected_btn" width="79" height="114"/>
+        <image name="bookShelf_uncheck_btn" width="79" height="114"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTHJW--GB1-0.ttf">
+            <string>FZLTHJW--GB1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CYBookListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CYBookListCell" rowHeight="99" id="KGk-i7-Jjw" customClass="CYBookListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-Ax-HDv">
+                        <rect key="frame" x="104" y="11" width="209" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Nd8-Bw-Ac5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y4-9E-VXa">
+                        <rect key="frame" x="104" y="39" width="209" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7ZM-1t-Dhe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="13"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cover" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNu-88-26e">
+                        <rect key="frame" x="104" y="60" width="209" height="28"/>
+                        <fontDescription key="fontDescription" name="FZLTHJW--GB1-0" family="FZLanTingHeiS-R-GB" pointSize="11"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d_books.png" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-kg-eTf">
+                        <rect key="frame" x="9" y="11" width="80" height="89"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.41176470590000003" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="hT6-yZ-TZu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9oY-Ax-HDv" firstAttribute="trailing" secondItem="1y4-9E-VXa" secondAttribute="trailing" id="9er-sE-RuG"/>
+                    <constraint firstItem="KNu-88-26e" firstAttribute="top" secondItem="1y4-9E-VXa" secondAttribute="bottom" constant="1" id="BgW-jx-Nn5"/>
+                    <constraint firstItem="9oY-Ax-HDv" firstAttribute="leading" secondItem="4h3-kg-eTf" secondAttribute="trailing" constant="15" id="Rm6-tF-0cf"/>
+                    <constraint firstItem="1y4-9E-VXa" firstAttribute="top" secondItem="9oY-Ax-HDv" secondAttribute="bottom" constant="7" id="SpZ-vM-0LY"/>
+                    <constraint firstItem="1y4-9E-VXa" firstAttribute="trailing" secondItem="KNu-88-26e" secondAttribute="trailing" id="aS2-OY-0Eo"/>
+                    <constraint firstItem="4h3-kg-eTf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-7" id="bU7-Vr-d3s"/>
+                    <constraint firstItem="1y4-9E-VXa" firstAttribute="leading" secondItem="KNu-88-26e" secondAttribute="leading" id="dOG-xh-zqz"/>
+                    <constraint firstItem="9oY-Ax-HDv" firstAttribute="leading" secondItem="1y4-9E-VXa" secondAttribute="leading" id="gJt-Vh-Ne7"/>
+                    <constraint firstItem="4h3-kg-eTf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gn7-0p-vgS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KNu-88-26e" secondAttribute="bottom" constant="11" id="lzo-PF-YAu"/>
+                    <constraint firstItem="4h3-kg-eTf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="vCw-4Z-qt8"/>
+                    <constraint firstItem="4h3-kg-eTf" firstAttribute="top" secondItem="9oY-Ax-HDv" secondAttribute="top" id="wrt-Ah-md8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9oY-Ax-HDv" secondAttribute="trailing" constant="-9" id="zqs-ct-hf4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookAuthor" destination="1y4-9E-VXa" id="R1b-3X-Naq"/>
+                <outlet property="bookImg" destination="4h3-kg-eTf" id="FFk-G8-YWe"/>
+                <outlet property="bookInfo" destination="KNu-88-26e" id="epa-4h-jJ6"/>
+                <outlet property="bookName" destination="9oY-Ax-HDv" id="z7f-P0-8CB"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="176.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="d_books.png" width="89" height="119"/>
+    </resources>
+</document>

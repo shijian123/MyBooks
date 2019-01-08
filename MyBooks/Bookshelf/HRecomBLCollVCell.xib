@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTKHK--GBK1-0.ttf">
+            <string>FZLTKHK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HRecomBLCollVCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999973" contentMode="center" reuseIdentifier="HRecomBLCollVCell" id="kRu-0f-n9K" customClass="HRecomBLCollVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_bookOut1_img" translatesAutoresizingMaskIntoConstraints="NO" id="Ys6-xb-gII">
+                        <rect key="frame" x="12" y="2" width="85" height="116"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="eqs-KT-qTm"/>
+                            <constraint firstAttribute="height" constant="116" id="ngs-eM-glm"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_bookOut3_img" translatesAutoresizingMaskIntoConstraints="NO" id="62l-w6-E4r">
+                        <rect key="frame" x="10" y="0.0" width="90" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="FF1-Qg-4XL"/>
+                            <constraint firstAttribute="width" constant="90" id="qOa-O7-xGw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwl-2L-1Yw">
+                        <rect key="frame" x="105" y="11" width="203" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="203" id="Zp1-ft-8na"/>
+                            <constraint firstAttribute="height" constant="21" id="fOh-LH-uMj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="15"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.1764705882" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6T-l0-ZgH">
+                        <rect key="frame" x="105" y="32" width="185" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="M6a-ut-nnz"/>
+                            <constraint firstAttribute="height" constant="19" id="POd-x3-Zje"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="13"/>
+                        <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-zb-q0H">
+                        <rect key="frame" x="105" y="66" width="203" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="203" id="Blo-Q6-yJD"/>
+                            <constraint firstAttribute="height" constant="45" id="WBz-ZN-hIC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="13"/>
+                        <color key="textColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selection_collLine_img" translatesAutoresizingMaskIntoConstraints="NO" id="hcM-7q-J4Q">
+                        <rect key="frame" x="0.0" y="119" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="72Q-Oo-3iV"/>
+                            <constraint firstAttribute="width" constant="320" id="cUy-ON-4Kv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hcM-7q-J4Q" firstAttribute="leading" secondItem="kRu-0f-n9K" secondAttribute="leading" id="0cC-Ct-Y6g"/>
+                <constraint firstItem="62l-w6-E4r" firstAttribute="top" secondItem="kRu-0f-n9K" secondAttribute="top" id="4wa-O7-k2v"/>
+                <constraint firstItem="Ys6-xb-gII" firstAttribute="leading" secondItem="kRu-0f-n9K" secondAttribute="leading" constant="12" id="57P-CQ-Lcq"/>
+                <constraint firstAttribute="centerX" secondItem="62l-w6-E4r" secondAttribute="centerX" constant="105" id="DJK-wc-tFH"/>
+                <constraint firstAttribute="bottom" secondItem="hcM-7q-J4Q" secondAttribute="bottom" id="Dmq-Ny-Mff"/>
+                <constraint firstAttribute="trailing" secondItem="p6T-l0-ZgH" secondAttribute="trailing" constant="30" id="Equ-vO-cMA"/>
+                <constraint firstItem="uwl-2L-1Yw" firstAttribute="top" secondItem="kRu-0f-n9K" secondAttribute="top" constant="11" id="LA5-j5-6rj"/>
+                <constraint firstAttribute="trailing" secondItem="Tlc-zb-q0H" secondAttribute="trailing" constant="12" id="Pr2-du-Mcr"/>
+                <constraint firstItem="hcM-7q-J4Q" firstAttribute="top" secondItem="Ys6-xb-gII" secondAttribute="bottom" constant="1" id="QAY-Lu-OdY"/>
+                <constraint firstItem="62l-w6-E4r" firstAttribute="leading" secondItem="kRu-0f-n9K" secondAttribute="leading" constant="10" id="RO7-N8-OGU"/>
+                <constraint firstAttribute="trailing" secondItem="uwl-2L-1Yw" secondAttribute="trailing" constant="12" id="VB4-fe-vrs"/>
+                <constraint firstItem="uwl-2L-1Yw" firstAttribute="leading" secondItem="Ys6-xb-gII" secondAttribute="trailing" constant="8" id="YeC-DG-6GB"/>
+                <constraint firstItem="Tlc-zb-q0H" firstAttribute="leading" secondItem="Ys6-xb-gII" secondAttribute="trailing" constant="8" id="lf1-V6-RNF"/>
+                <constraint firstAttribute="trailing" secondItem="hcM-7q-J4Q" secondAttribute="trailing" id="tn9-jo-sGM"/>
+                <constraint firstItem="Ys6-xb-gII" firstAttribute="top" secondItem="kRu-0f-n9K" secondAttribute="top" constant="2" id="uEv-In-BDV"/>
+                <constraint firstItem="p6T-l0-ZgH" firstAttribute="top" secondItem="uwl-2L-1Yw" secondAttribute="bottom" id="ucb-yn-vup"/>
+                <constraint firstItem="p6T-l0-ZgH" firstAttribute="leading" secondItem="Ys6-xb-gII" secondAttribute="trailing" constant="8" id="ya9-lv-OdD"/>
+                <constraint firstItem="Tlc-zb-q0H" firstAttribute="top" secondItem="p6T-l0-ZgH" secondAttribute="bottom" constant="15" id="yhi-kg-kB1"/>
+            </constraints>
+            <size key="customSize" width="358" height="76"/>
+            <connections>
+                <outlet property="recBookAuthor" destination="p6T-l0-ZgH" id="7rO-vl-Mbp"/>
+                <outlet property="recBookContent" destination="Tlc-zb-q0H" id="THo-JK-XII"/>
+                <outlet property="recBookTitle" destination="uwl-2L-1Yw" id="3qd-DZ-beT"/>
+                <outlet property="recommBookImg" destination="Ys6-xb-gII" id="7hG-sY-m5j"/>
+                <outlet property="recommBookLineImg" destination="hcM-7q-J4Q" id="eeD-z2-gdB"/>
+                <outlet property="recommKuangImg" destination="62l-w6-E4r" id="Vpe-vS-XPw"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="235"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="select_bookOut1_img" width="16" height="16"/>
+        <image name="select_bookOut3_img" width="16" height="16"/>
+        <image name="selection_collLine_img" width="16" height="16"/>
+    </resources>
+</document>

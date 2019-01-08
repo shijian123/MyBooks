@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FolderViewController">
+            <connections>
+                <outlet property="bgImageView" destination="yFR-JB-PHz" id="qkX-YB-ULu"/>
+                <outlet property="collectionView" destination="bCW-bS-Zhw" id="amr-uO-48H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yFR-JB-PHz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-bS-Zhw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="92a-Ul-ZmU">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bCW-bS-Zhw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4e2-hB-pPX"/>
+                <constraint firstItem="yFR-JB-PHz" firstAttribute="leading" secondItem="bCW-bS-Zhw" secondAttribute="leading" id="BYA-hs-IDe"/>
+                <constraint firstItem="bCW-bS-Zhw" firstAttribute="bottom" secondItem="yFR-JB-PHz" secondAttribute="bottom" id="BlL-pL-2fE"/>
+                <constraint firstItem="yFR-JB-PHz" firstAttribute="trailing" secondItem="bCW-bS-Zhw" secondAttribute="trailing" id="CIt-pp-RZs"/>
+                <constraint firstItem="bCW-bS-Zhw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ISb-EL-LA3"/>
+                <constraint firstAttribute="trailing" secondItem="bCW-bS-Zhw" secondAttribute="trailing" id="Vsc-aR-yrR"/>
+                <constraint firstItem="yFR-JB-PHz" firstAttribute="centerY" secondItem="bCW-bS-Zhw" secondAttribute="centerY" id="gq1-YM-5cm"/>
+                <constraint firstAttribute="bottom" secondItem="bCW-bS-Zhw" secondAttribute="bottom" id="uRf-N8-jJr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="106" y="149"/>
+        </view>
+    </objects>
+</document>

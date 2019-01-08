@@ -1,0 +1,44 @@
+//
+//  myBooks.pch
+//  MyBooks
+//
+//  Created by zcy on 2018/5/3.
+//  Copyright © 2018年 CY. All rights reserved.
+//
+
+#ifndef myBooks_pch
+#define myBooks_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import "CYConst.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "NSString+Stringhttpfix.h"
+#import <BmobSDK/Bmob.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "MBProgressHUD+CY.h"
+#import <MJRefresh.h>
+#import "MJExtension.h"
+#import "CYHttpTool.h"
+
+#endif
+
+#endif /* myBooks_pch */
+
+//调试状态
+#ifdef DEBUG
+//打开LOG功能
+#define CYLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态
+//关闭LOG功能
+#define CYLog(...)
+#endif
+
+
+#define CYBASEURL @"https://api-v3.hotbook.wang/bsis/"
+
+

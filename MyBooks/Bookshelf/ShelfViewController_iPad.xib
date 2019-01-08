@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTKHK--GBK1-0.ttf">
+            <string>FZLTKHK--GBK1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShelfViewController">
+            <connections>
+                <outlet property="bookShelf_navLineIV" destination="X6i-M6-2UY" id="h0y-ZO-Fyq"/>
+                <outlet property="bookShelf_navTopTitIV" destination="2dR-I2-7uc" id="Amn-NL-LpO"/>
+                <outlet property="bookStore" destination="BAX-3B-Bn7" id="jkP-cp-M8W"/>
+                <outlet property="collectionView" destination="mEd-ZL-4Af" id="fnL-sV-FDK"/>
+                <outlet property="deleteCancelBtn" destination="reh-jR-GkG" id="JxH-ys-eJM"/>
+                <outlet property="deleteSureBtn" destination="BNV-LJ-6d9" id="7m4-XZ-UIV"/>
+                <outlet property="edit_compileBtn" destination="Ohx-Xh-TDq" id="GfQ-IO-fPK"/>
+                <outlet property="edit_deleteBtn" destination="Yih-oB-3Ok" id="oIh-dL-vJg"/>
+                <outlet property="edit_skinBtn" destination="Eh4-pE-Q7A" id="KpM-gm-xnp"/>
+                <outlet property="lowView" destination="cum-tv-lxh" id="wuX-ij-mK6"/>
+                <outlet property="mainEditV" destination="RbT-ny-wnk" id="77S-Vt-vSn"/>
+                <outlet property="navigationBgImageView" destination="emy-CP-3tH" id="u0t-cf-B6T"/>
+                <outlet property="navigationView" destination="YJe-Nr-deA" id="ngO-EQ-117"/>
+                <outlet property="themeSwitchBtn" destination="Fpx-Op-Ren" id="y3j-cc-AJZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sQa-jA-U96"/>
+                <outlet property="viewBgImageView" destination="9zZ-7S-1vA" id="Yw3-ds-Cn6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="YJe-Nr-deA">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_background_img_ipad.png" id="emy-CP-3tH" customClass="ThemeImgView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fpx-Op-Ren" customClass="ThemeButton">
+                            <rect key="frame" x="20" y="35" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="bookShelf_wifi_btn_ipad.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoWifiAction:" destination="-1" eventType="touchUpInside" id="bIP-nc-Ldh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BAX-3B-Bn7" customClass="ThemeButton">
+                            <rect key="frame" x="705" y="35" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="bookShelf_bookCity_btn_ipad.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoBookStoreAction:" destination="-1" eventType="touchUpInside" id="OBv-ho-UgB"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BNV-LJ-6d9">
+                            <rect key="frame" x="20" y="35" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="15"/>
+                            <state key="normal" title="确定">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="reh-jR-GkG">
+                            <rect key="frame" x="695" y="33" width="72" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="FZLTKHK--GBK1-0" family="FZLanTingKanHei-R-GBK" pointSize="15"/>
+                            <state key="normal" title="取消">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookShelf_topTitle_img_ipad.png" id="2dR-I2-7uc" customClass="ThemeImgView">
+                            <rect key="frame" x="367" y="30" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="X6i-M6-2UY">
+                            <rect key="frame" x="0.0" y="79" width="768" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="cum-tv-lxh">
+                    <rect key="frame" x="0.0" y="80" width="768" height="924"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9zZ-7S-1vA" customClass="ThemeImgView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="925"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" id="mEd-ZL-4Af">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="924"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="mo2-Xq-7gE">
+                                <size key="itemSize" width="142" height="188"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="45" minY="5" maxX="45" maxY="5"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" id="RbT-ny-wnk">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="zF4-6s-fsn" appends="YES" id="km7-PQ-B94"/>
+                    </connections>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Eh4-pE-Q7A" customClass="ThemeButton">
+                    <rect key="frame" x="600" y="850" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="bookShelf_skin_btn_ipad.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoChangeSkinBtnAction:" destination="-1" eventType="touchUpInside" id="oNB-TP-AUt"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yih-oB-3Ok" customClass="ThemeButton">
+                    <rect key="frame" x="600" y="850" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="bookShelf_delete_btn_ipad.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoDeleteBookAction:" destination="-1" eventType="touchUpInside" id="vu9-po-7g6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ohx-Xh-TDq" customClass="ThemeButton">
+                    <rect key="frame" x="600" y="850" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <state key="normal" image="bookShelf_edit_btn_ipad.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="gotoCompileAction:" destination="-1" eventType="touchUpInside" id="VLs-HJ-LNy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <tapGestureRecognizer id="zF4-6s-fsn">
+            <connections>
+                <action selector="closeDeleteTapAction:" destination="-1" id="k9h-wE-ona"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="bookShelf_bookCity_btn_ipad.png" width="80" height="80"/>
+        <image name="bookShelf_delete_btn_ipad.png" width="110" height="110"/>
+        <image name="bookShelf_edit_btn_ipad.png" width="128" height="128"/>
+        <image name="bookShelf_skin_btn_ipad.png" width="110" height="110"/>
+        <image name="bookShelf_topTitle_img_ipad.png" width="80" height="80"/>
+        <image name="bookShelf_wifi_btn_ipad.png" width="80" height="80"/>
+        <image name="nav_background_img_ipad.png" width="1536" height="128"/>
+    </resources>
+</document>
