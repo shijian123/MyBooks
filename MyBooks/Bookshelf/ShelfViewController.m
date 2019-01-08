@@ -1247,10 +1247,8 @@ typedef enum :NSUInteger{
     
     //全局收编辑
     self.mainEditV.hidden = YES;
-    
     self.edit_compileBtn.hidden = YES;
     self.edit_deleteBtn.hidden = YES;
-    //    self.edit_skinBtn.hidden = YES;
     [self showDeleteBookBtn:YES];
     self.isEdit = YES;
     [self.collectionView reloadData];
