@@ -13,9 +13,22 @@ PODS:
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
   - BmobSDK (2.2.9)
+  - BSBacktraceLogger (0.0.1)
   - Bugly (2.5.0)
+  - DoraemonKit (1.1.6):
+    - BSBacktraceLogger
+    - DoraemonKit/Core (= 1.1.6)
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - DoraemonKit/Core (1.1.6):
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
   - FCUUID (1.2.0):
     - UICKeyChainStore (~> 2.1.0)
+  - fishhook (0.2)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
@@ -23,6 +36,8 @@ PODS:
   - MBProgressHUD (0.9.2)
   - MJExtension (2.5.16)
   - MJRefresh (3.1.15.3)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - Reachability (3.2)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -30,11 +45,14 @@ PODS:
   - THPinViewController (1.2.6)
   - TSPopover (0.1.0)
   - UICKeyChainStore (2.1.1)
+  - UICountingLabel (1.2.0)
+  - "UITextView+Placeholder (1.2.1)"
 
 DEPENDENCIES:
   - ASIHTTPRequest (~> 1.8.2)
   - BmobSDK (~> 2.2.3)
   - Bugly
+  - DoraemonKit (~> 1.1.6)
   - FCUUID (~> 1.2.0)
   - FMDB (~> 2.7.2)
   - JWFolders (~> 0.9)
@@ -45,22 +63,51 @@ DEPENDENCIES:
   - THPinViewController (~> 1.2.6)
   - TSPopover (~> 0.1.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ASIHTTPRequest
+    - BmobSDK
+    - BSBacktraceLogger
+    - Bugly
+    - DoraemonKit
+    - FCUUID
+    - fishhook
+    - FMDB
+    - JWFolders
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - PNChart
+    - Reachability
+    - SDWebImage
+    - THPinViewController
+    - TSPopover
+    - UICKeyChainStore
+    - UICountingLabel
+    - "UITextView+Placeholder"
+
 SPEC CHECKSUMS:
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
   BmobSDK: b520e1669193ae7945ee3280f07c7bad1869df85
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
   Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DoraemonKit: 309c42d828dffb8149942afcfa2af84d8f44bad1
   FCUUID: 9bfe031d35b7c221a7c66156a0af45d4eb49c3b6
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   JWFolders: 482541014e25a283b20c6bb8af05272bbeb4b61a
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   THPinViewController: e0dc717a61c8a0a0f251764da26b9ca8a4fd2ec1
   TSPopover: 7e74bed90a4dda2b03e1e932bc49472fd42fe824
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
 
-PODFILE CHECKSUM: d696d38e46bdb82dfdf2886e17b28d5048ab8aa9
+PODFILE CHECKSUM: af3be2c5e2ab88c5b1f02350ec519fcd3cd22c92
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.1

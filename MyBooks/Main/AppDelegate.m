@@ -12,6 +12,10 @@
 #import "SmalleEbookWindow.h"
 #import <Bugly/Bugly.h>
 
+#ifdef DEBUG
+#import <DoraemonKit/DoraemonManager.h>
+#endif
+
 @interface AppDelegate ()
 
 @end
@@ -36,6 +40,10 @@
     [Bmob registerWithAppKey:@"41e16b6d95636fabe6a027ad8efb557a"];
     //开启bug监控
     [Bugly startWithAppId:@"4bd834b8d8"];
+    
+#ifdef EBUG
+    [[DoraemonManager shareInstance] install];
+#endif
     
     return YES;
 }

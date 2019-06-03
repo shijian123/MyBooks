@@ -1,5 +1,7 @@
 platform :ios, '8.0'
 
+install! 'cocoapods', generate_multiple_pod_projects: true
+
 target 'MyBooks' do
 
 #pod 'FDFullscreenPopGesture', '~> 1.1'
@@ -16,6 +18,8 @@ pod 'BmobSDK', '~> 2.2.3'
 #pod 'AFNetworking', '~> 3.2.0'
 pod 'Bugly'
 pod 'FCUUID', '~> 1.2.0'
+#pod 'DoraemonKit/Core', '~> 1.1.9', :configurations => ['Debug']
+pod 'DoraemonKit', '~> 1.1.6'
 
 end
 
